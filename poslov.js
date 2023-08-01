@@ -8,35 +8,57 @@ function replaceContentsOfElement() {
     {
       proverb: "知らぬが仏",
       translate:
-        "[Сирану га хотокэ] Невежество — блаженство. = Меньше знаешь, крепче спишь.",
+        "[Сирану га хотокэ]\nНевежество — блаженство. = Меньше знаешь, крепче спишь.",
     },
     {
       proverb: "朱に交われば赤くなる",
       translate:
-        "[Сю ни мадзиварэба акаку нару]  Если смешать с красными чернилами, все станет красным. — Эта фраза используется с негативным оттенком. Так говорят, например, детям, чтобы они не дружили с плохой компанией.",
+        "[Сю ни мадзиварэба акаку нару]" +
+        "\n" +
+        "Если смешать с красными чернилами, все станет красным. — Эта фраза используется с негативным оттенком. Так говорят, например, детям, чтобы они не дружили с плохой компанией.",
     },
     {
       proverb: "他人の飯を食う",
       translate:
-        "[Танин но мэси о куу] Есть пищу странника. — О ком-то, кто покинул дом и терпит лишения.",
+        "[Танин но мэси о куу]" +
+        "\n" +
+        "Есть пищу странника. — О ком-то, кто покинул дом и терпит лишения.",
     },
     {
       proverb: "備えあれば憂いなし",
       translate:
-        "[Сонаэ арэба урэи наси] Если готов, то не о чем волноваться. = Предупрежден — значит, вооружен.",
+        "[Сонаэ арэба урэи наси]" +
+        "\n" +
+        "Если готов, то не о чем волноваться. = Предупрежден — значит, вооружен.",
     },
   ];
 
   let number = Math.trunc(Math.random() * (6 - 0) + 0);
-  let sp = document.getElementById("top");
-  txt = document.createTextNode(proverbs[number].translate);
-  sp.appendChild(txt);
-  //document.getElementById("top").innerText = proverbs[number].translate;
-  //document.getElementById("#top").innerText = proverbs[number].translate;
-  document.querySelector(".hover-text").textContent = proverbs[number].proverb;
+  // document.getElementById("top").textContent = proverbs[number].translate;
+  //document.querySelector(".hover-text").textContent = proverbs[number].proverb;
+  document.getElementById("top").textContent = proverbs[number].translate;
+  let pos = (document.querySelector(".tooltip").textContent =
+    proverbs[number].proverb);
+  pos.setAttribute("data-title", proverbs[number].translate);
 }
+
+//в таком состояние работает так что меняется подсказка и меняется текст у другого блока
+
+//document.getElementById("top").textContent = proverbs[number].translate;
+//let pos = (document.querySelector(".tooltip").textContent =
+//  proverbs[number].proverb);
+
+//document
+//    .querySelector("tooltip")
+//    .setAttribute("data-title", proverbs[number].translate);
+//document.querySelector(".tooltiptext").textContent =
+//proverbs[number].translate;
+//  document.querySelector(".tooltiptext").textContent =
+//   proverbs[number].translate;
+//  document.querySelector(".hover-text").textContent = proverbs[number].proverb;
+//  document.querySelector(".tooltip").textContent = proverbs[number].proverb;
 
 // 2000 - 2 секунды
 // 1 минута 60 секунд -> 60000
 // 1 час 60 минут -> 3 600 000
-setInterval(replaceContentsOfElement, 10000);
+setInterval(replaceContentsOfElement, 5000);
