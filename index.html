@@ -250,7 +250,9 @@
     <section id="contact" class="record">
         <div class="record__form">
             <p class="record__form__title">Оставьте заявку на обучение <br> и я с вами свяжусь!</p>
-            <form >
+            <form action="mail.php" enctype="multipart/form-data" method="POST">
+                <input type="hidden" name="admin_email[]" value="vi.sysoeva1506@gmail.com">
+                <input type="hidden" name="form_subject" value="Тема письма">
                 <!--
                 <div class="record__form__item">
                   <input class="text" required />
@@ -259,15 +261,15 @@
                 </div>
                  -->
                 <div class="inputbox">
-                    <input type="text" required="required">
+                    <input type="text" name="user_name" required="required">
                     <span>ФИО</span>
                   </div>
                   <div class="inputbox">
-                    <input type="text" required="required">
+                    <input type="tel"  name="user_tel" required="required">
                     <span>Телефон</span>
                   </div>
                   <div class="inputbox">
-                    <input type="text" required="required">
+                    <input type="text"  name="user_question" required="required">
                     <span>Остались вопросы? Напишите</span>
                   </div>
                 <!--
@@ -290,6 +292,9 @@
                   Отправить
                 </button>
               </form>
+              <script src="inputmask.min.js"></script>
+              <script src="just-validate.min.js"></script>
+              <script src="script.js"></script>
         </div>
         <div class="record__card">
             <div class="record__card__line-tel">
