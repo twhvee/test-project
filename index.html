@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japane sensey</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css"> 
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
 </head>
 <body>
     <section class="header">
         <div class="header__top">
+            <div class="header__nav-btn">
+                <button class="nav-icon-btn">
+                    <div class="nav-icon"></div>
+                </button>
+            </div>
             <div class="header__top-vizitka">
                 <p class="header__top-vizitka-name"> Котлова Алла</p>
                 <div class="header__top-vizitka-razdel"></div>
@@ -20,6 +26,15 @@
                 <img class="flag" src="./img/vizitka2.jpg">
                 <img class="vizitka-flowers" src="./img/vizitka1.jpg">
             </div>
+
+            <ul class="header__list2">
+                <li class="header__navbar__item2"><a  href="#about" class="header__navbar__item3"><span>Обо мне</span></a></li>
+                <li class="header__navbar__item2"><a  href="#review" class="header__navbar__item4"><span>Отзывы</span></a></li>
+                <li class="header__navbar__item2"><a  href="#contact" class="header__navbar__item5"><span>Контакты</span></a></li>
+                <li class="header__navbar__item2"><a  href="#cost" class="header__navbar__item6"><span>Тарифы</span></a></li>
+                <li class="header__navbar__item2"><a  href="#materials" class="header__navbar__item7"><span>Материалы</span></a></li>
+               
+            </ul>
                 <!--  <img src="img/vizitka.jpg" class="header_vizitka"> -->
             <div class="header__top__title">
                 <h1 class="header__title"> Японский язык онлайн и офлайн</h1>
@@ -30,19 +45,19 @@
         
         <div class="header__points">
             <div class="header__points__item"> 
-                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__svg"  viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5613 22C11.0304 22 10.5274 21.7974 10.1735 21.4427L0.477715 11.6485C-0.211513 10.9561 -0.146316 9.88381 0.617424 9.26744C1.38116 8.64264 2.56403 8.70174 3.24394 9.39409L11.3284 17.5672L23.5855 0.756557C24.1536 -0.0202298 25.3086 -0.231313 26.1654 0.275287C27.0223 0.790331 27.2552 1.83731 26.6963 2.61409L13.1167 21.2485C12.8 21.6876 12.2784 21.9662 11.701 22C11.6544 22 11.6078 22 11.5613 22Z" fill="#4A4E69"/>
                     </svg>                    
                 <p class="header__points__item-title">профессионально</p>
             </div>
             <div class="header__points__item"> 
-                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__svg" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5613 22C11.0304 22 10.5274 21.7974 10.1735 21.4427L0.477715 11.6485C-0.211513 10.9561 -0.146316 9.88381 0.617424 9.26744C1.38116 8.64264 2.56403 8.70174 3.24394 9.39409L11.3284 17.5672L23.5855 0.756557C24.1536 -0.0202298 25.3086 -0.231313 26.1654 0.275287C27.0223 0.790331 27.2552 1.83731 26.6963 2.61409L13.1167 21.2485C12.8 21.6876 12.2784 21.9662 11.701 22C11.6544 22 11.6078 22 11.5613 22Z" fill="#4A4E69"/>
                     </svg>                    
                 <p class="header__points__item-title">эффективно</p>
             </div>
             <div class="header__points__item"> 
-                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__svg" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5613 22C11.0304 22 10.5274 21.7974 10.1735 21.4427L0.477715 11.6485C-0.211513 10.9561 -0.146316 9.88381 0.617424 9.26744C1.38116 8.64264 2.56403 8.70174 3.24394 9.39409L11.3284 17.5672L23.5855 0.756557C24.1536 -0.0202298 25.3086 -0.231313 26.1654 0.275287C27.0223 0.790331 27.2552 1.83731 26.6963 2.61409L13.1167 21.2485C12.8 21.6876 12.2784 21.9662 11.701 22C11.6544 22 11.6078 22 11.5613 22Z" fill="#4A4E69"/>
                     </svg>
                 <p class="header__points__item-title">интересно</p>
@@ -57,6 +72,7 @@
             </span>
             <span class="button-text">Записаться</span>
           </button>
+        
         <div class="header__bottom">
             <nav class="header__navbar">
                 <ul class="header__list">
@@ -68,7 +84,10 @@
                    
                 </ul>
             </nav>
+            
         </div>
+
+        
         
     </section>
     <section class="list">
@@ -96,18 +115,22 @@
         </div>     
     </section>
     <section class="poslovicha">
-        <img src="./img/pos11.jpg" class="poslovicha__img">
+        
+            <img src="./img/pos11.jpg" class="poslovicha__img">
         <div class="hover-text">*
-            <span class="tooltip-text" id="top">[Карэки мо яма но нигивай]
-                    Даже увядшие деревья оживляют гору (лучше гора с деревьями, чем голая).
-                    = Лучше синица в руке, чем журавль в небе.</span>
+            <span class="tooltip-text" id="top">Нет ничего дороже того, что ты получил бесплатно</span>
             </div>
-     
            
-            <div class="tooltip">枯れ木も山の賑わい</div>
-           
-        <img src="./img/pos2.jpg" class="poslovicha__word">
+            <div class="tooltip">ただより高いものはない<br/>[ただよりたかいものはない]</div>
+        
+        
+        <!--<p class="poslovicha__word">ことわざ</p> -->
         <script  src="poslov.js"></script>
+        <div class="poslovicha__word">
+
+        </div>
+        <!--    <img src="./img/pos2.jpg" class="poslovicha__word"> -->
+         
 
     </section>
     <section id="about" class="about">
@@ -121,6 +144,11 @@
                     </p>
                     <p class="about__subtitle"> В 2001 г. окончила Ташкенский государственный Институт Востоковедения по специальнотси филологяпонсокго языка
                     </p>
+                    <p class="about__subtitle"> С 2001 г. 10 лет преподавала японский язык на всех уровнях в японском центре в г. Ташкент. Где была слушателем регулярных семинаров по методике преподавания японского языка, проводимых профессиональными преподавателями-японцами, напрвленными в японский центр фондом “Japan donation”.
+                    </p>
+                    <p class="about__subtitle"> Составляла  учебную программу, а так же поурочные планы от начального до высшего уровней.Вела курсы повышения квалификации  препожавателей япоснокго языка.
+                    </p>
+                   
         
                 </p>
             </div>
@@ -128,15 +156,6 @@
             <img src="./img/foto.jpg" class="about__foto">
 
         </div>
-        <div class="about__block__subtitle-2">
-            <p class="about__subtitle"> С 2001 г. 10 лет преподавала японский язык на всех уровнях в японском центре в г. Ташкент. Где была слушателем регулярных семинаров по методике преподавания японского языка, проводимых профессиональными преподавателями-японцами, напрвленными в японский центр фондом “Japan donation”.
-            </p>
-            <p class="about__subtitle"> Составляла  учебную программу, а так же поурочные планы от начального до высшего уровней.
-            </p>
-            <p class="about__subtitle">
-            Вела курсы повышения квалификации  препожавателей япоснокго языка. </p>
-        </div>
-       
     </section>
     <section class="deserts">
         <div class="deserts__item"> 
@@ -166,24 +185,20 @@
         <p class="qualification__title">Квалификация</p>
         <div class="qualification__line">
             <div class="qualification__item">
-                <img src="./img/Scan1_page-0001.jpg" width="370" height="600" tabindex="0"/>
+                <img  class="qualification__item-img" src="./img/Scan1_page-0001.jpg"  tabindex="0"/>
                 <!-- <embed src="./img/Scan1.PDF#view=FitH" width="370" height="600" /> -->
-                <p class="qualification__item-title">Сертификат 1</p>
+           
             </div>
+
             <div class="qualification__item">
-                <img src="./img/Scan10001_page-0001.jpg" width="370" height="600" tabindex="0" />
-                <!-- <embed src="./img/Scan10001.PDF#view=FitH" width="370" height="600" /> -->
-                <p class="qualification__item-title">Сертификат 2</p>
-            </div>
-            <div class="qualification__item">
-                <img src="./img/Scan10002_page-0001.jpg" width="370" height="600" tabindex="0"/>
+                <img class="qualification__item-img1" src="./img/ser.jpg"  tabindex="0"/>
                 <!-- <embed src="./img/Scan10002.PDF#view=FitH" width="370" height="600" /> -->
-                <p class="qualification__item-title">Сертификат 3</p>
+               
             </div>
             <div class="qualification__item">
-                <img src="./img/Scan10003_page-0001.jpg" width="370" height="600" tabindex="0"/>
+                <img  class="qualification__item-img" src="./img/Scan10003_page-0001.jpg"  tabindex="0"/>
                 <!-- <embed src="./img/Scan10003.PDF#view=FitH" width="370" height="600" /> -->
-                <p class="qualification__item-title">Сертификат 4</p>
+
 
              </div>
         </div>
@@ -226,7 +241,7 @@
         <p class="materials__title">Материалы</p>
         <div class="materials__content">
             <div class="materials__item">
-                <embed src="./img/mat.pdf" width="600" height="650" />
+                <embed src="./img/mat.pdf" class="materials__pdf"/>
                  <!-- <p class="materials__item-title">Иероглифы</p> -->
             </div>
             <div class="materials__item">
@@ -302,7 +317,7 @@
         </div>
         <div class="record__card">
             <div class="record__card__line-tel">
-                <svg width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="record__svg" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_46_104)">
                     <path d="M37.7644 33.7637L31.1198 27.4212C30.3206 26.6585 29.0251 26.6585 28.2261 27.4212L25.473 30.0491C20.0752 27.1429 15.5644 22.8372 12.5198 17.6847L15.4597 14.8784C16.2589 14.1157 16.2589 12.879 15.4597 12.1163L8.81512 5.77395C8.01599 5.01122 6.72048 5.01122 5.92143 5.77395L1.67836 9.82416L1.69477 9.83983C0.192583 11.0112 -0.423159 13.0378 0.307224 15.0354C4.83329 27.4158 15.2787 37.3863 28.2485 41.7066C30.2474 42.3724 32.2681 41.8675 33.5169 40.5719L33.5212 40.576L37.7643 36.5258C38.5635 35.7631 38.5635 34.5265 37.7644 33.7637Z" fill="#BFDBF7"/>
                     <path d="M22.4252 11.1521C21.6285 11.1521 20.9826 11.7686 20.9826 12.5292C20.9826 13.2897 21.6284 13.9062 22.4252 13.9062C26.2885 13.9062 29.4316 16.9063 29.4316 20.594C29.4316 21.3545 30.0775 21.971 30.8742 21.971C31.6709 21.971 32.3168 21.3545 32.3168 20.594C32.3168 15.3878 27.8794 11.1521 22.4252 11.1521Z" fill="#BFDBF7"/>
@@ -319,7 +334,7 @@
 
             </div>
             <div class="record__card__line">
-                <svg width="38" height="42" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="record__svg" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 22.05L35.3875 9.975C34.675 7.21875 32.4187 5.25 29.6875 5.25H8.31249C5.58124 5.25 3.32499 7.21875 2.61249 9.975L19 22.05Z" fill="#BFDBF7"/>
                     <path d="M19.7125 24.6749C19.475 24.8062 19.2375 24.9374 19 24.9374C18.7625 24.9374 18.525 24.8062 18.2875 24.6749L2.375 12.9937V30.1874C2.375 33.8624 4.9875 36.7499 8.3125 36.7499H29.6875C33.0125 36.7499 35.625 33.8624 35.625 30.1874V12.9937L19.7125 24.6749Z" fill="#BFDBF7"/>
                     </svg>
@@ -332,109 +347,91 @@
         </div>
 
     </section>
-    <section id="review" class="review">
+    <div id="review" class="review">
         <p class="review__title">Отзывы</p>
-        <img class="review__flower-left" src="./img/floleft.jpg">
-        <div class="review__content">
-             <!--
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807612 11.0711 0.807612 10.4853 1.3934L0.93934 10.9393ZM32 10.5L2 10.5V13.5L32 13.5V10.5Z" fill="black"/>
-                </svg>
+        <div class="cd-testimonials-wrapper cd-container">
+        <ul class="cd-testimonials">
+            <li>
+                <p>Я начал заниматься с Аллой-сенсей около 2 лет назад. Я пришел к сенсею уже с какими-то знаниями японского языка - изучал язык до этого, но был очень большой перерыв, и за это время уже многое забылось. Сенсей следует программе учебников Minna no nihongo, но в случае чего всегда учитывала мои пожелания и изменяла формат уроков. Сенсей использует коммуникативную методику преподавания, направленную на развитие разговорных навыков японского языка. Таким образом, занимаясь по 2 раза в неделю, в течение короткого промежутка времени я сразу начал хорошо понимать на слух и разговаривать сам. 
+    
+                    <br>С Аллой-сенсей всегда можно обсудить различные аспекты японской культуры, а также подискутировать на любые темы, что придает и без того увлекательным занятиям еще больше огня. Помимо знаний японского, сенcей всегда поделится личным опытом проживания в стране восходящего солнца, что поможет лучше понять психологию и особенности культуры японцев. За все время занятий с сенсеем мой уровень японского поднялся с N5 до N3, за что я ей безумно благодарен и не планирую останавливаться.</p>
+                            </p>
+                <div class="cd-author">
+                    <img src="img/foto0.jpg" alt="Author image">
+                    <ul class="cd-author-info">
+                        <li>Андрей Владимирович Брылов</li>
+                        <li>andrey.brylov@phystech.edu </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <p>Алла-сенсей - очень деликатный и внимательный педагог, создающий дружелюбное и комфортное пространство.   Очень импонирует то, что преподаватель  относится с одинаковым внимательнием и уважением к каждому ученику в независимости от цели обучения( даже если ты учишь язык только как хобби, или чтобы смотреть аниме). Также приятно, что Алла-сенсей всегда готова помочь разобраться со сложностями, поделиться дополнительными материалами. Особенно это было ценно приподготовке к Noryoku shiken, который удалось успешно сдать (N5 и N4). Учебные материалы  и учебник Minna no Nihongo, которые мы использовали на курсе идеально подходят для этой цели. 
+                    <br>Огромный плюс, что программа хорошо структурирована. Домашнее задание позволяет эффективно изучать язык даже посещая занятия раз в неделю. Удобно и сбалансированно. Занятия построены грамотно, за этим стоит очень ответственный и серьезный подход преподавателя. При этом на уроках всегда оставалось место играм, шуткам и конечно же рассказам о культурных особенностях Японии и  нюансах живого современного языка (преподаватель учила японский именно у японских преподавателей и имеет длительный опыт работы с японцами). 本当にありがとう ✌️</p>
+                </p>
+                <div class="cd-author">
+                    <img src="img/foto1.jpeg" alt="Author image">
+                    <ul class="cd-author-info">
+                        <li>Наталья Серегин</li>
+                        <li>аnatalia.artsmuseum@gmail.com</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <p>Хочу выразить огромную благодарность Алле Сенсею за проведенные уроки и часы учебы! Занимались вместе еще с самой начальной группы в течении 2х лет и Сенсей всегда терпеливо и доходчиво объясняла материал, в целом нельзя не отметить очень дружелюбную и ламповую обстановку на самих занятиях, что при классических занятиях в классе, что при переходе в онлайн формат!
+                    <br>В целом занятия дали как уверенность и мотивацию работать с языком, так и очень хорошие знакомства в виде близких друзей, сокурсников с кем познакомились и ходили вместе на занятия)
+                    <br>Еще раз спасибо огромное за все занятия!</p>
+                </p>
+                <div class="cd-author">
+                    <img src="img/foto0.jpg" alt="Author image">
+                    <ul class="cd-author-info">
+                        <li>Максим</li>
+                        <li>maksoner@mail.ru</li>
+                    </ul>
+                </div>
+            </li>
             
-            <div class="review__content__item-f">
-                <div class="review__block">
-                    <p class="review__content__item__name-f">Имя Фамилия</p>
-                    <p class="review__content__item__mail-f">@pochta1</p>
-                    <p class="review__content__item__text-f">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-
-                </div>
-               
-            </div>
-            <div class="review__content__item-b">
-                <div class="review__block">
-                    <p class="review__content__item__name-b">Имя Фамилия <br> @pochta2</p>
-                    <p class="review__content__item__text-b">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-
-                </div>
-            </div>
-            <svg width="42" height="23" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M41.0875 12.0331C41.6581 11.4325 41.6337 10.4831 41.0331 9.9125L31.2456 0.614383C30.645 0.0438037 29.6956 0.0681482 29.125 0.668758C28.5544 1.26937 28.5788 2.2188 29.1794 2.78938L37.8794 11.0544L29.6144 19.7544C29.0438 20.355 29.0681 21.3044 29.6688 21.875C30.2694 22.4456 31.2188 22.4212 31.7894 21.8206L41.0875 12.0331ZM1.03845 13.4995L40.0384 12.4995L39.9616 9.50049L0.961551 10.5005L1.03845 13.4995Z" fill="black"/>
-                </svg>              
-        </div>
-    -->
-        <img class="review__flower-right" src="./img/floright.jpg">
-        
-
-
-        <div class="container">
-            <div class="testiSlide">
-              <div>
-                <figure class="testimonial">
-                    <div class="review__content__item-b">
-                        <div class="review__block">
-                            <p class="review__content__item__name-b">Имя Фамилия <br> @pochta1</p>
-                            <p class="review__content__item__text-b">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-        
-                        </div>
-                    </div>
-                </figure>
-              </div>
-          
-              <div>
-                <figure class="testimonial">
-                    <div class="review__content__item-f">
-                        <div class="review__block">
-                            <p class="review__content__item__name-f">Имя Фамилия</p>
-                            <p class="review__content__item__mail-f">@pochta2</p>
-                            <p class="review__content__item__text-f">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-        
-                        </div>
-                       
-                    </div>
-                </figure>
-              </div>
-          
-              <div>
-                <figure class="testimonial">
-                    <div class="review__content__item-b">
-                        <div class="review__block">
-                            <p class="review__content__item__name-b">Имя Фамилия <br> @pochta3</p>
-                            <p class="review__content__item__text-b">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-        
-                        </div>
-                    </div>
-                </figure>
-              </div>
-          
-              <div>
-                <figure class="testimonial">
-                    <div class="review__content__item-f">
-                        <div class="review__block">
-                            <p class="review__content__item__name-f">Имя Фамилия</p>
-                            <p class="review__content__item__mail-f">@pocht4</p>
-                            <p class="review__content__item__text-f">Поопаоп алпдпал вдла аплдвп пвлдрлрпвддв рпвдллрп впрдл втпаьпапалтиапыитдтлтлтл ипаыопад паооапдапдалпа</p>
-        
-                        </div>
-                       
-                    </div>
-                </figure>
-              </div>
-            </div>
-          </div>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-            <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-          
-              <script  src="function.js"></script>
+            <li>
+                <p>Алла-сенсей дала мне базу по грамматике и лексике японского языка, что помогло мне начать общаться с японцами уже на их языке и вести с ними повседневные разговоры. На уроках мы всегда могли разобрать непонятные с первого раза тонкости языка, Алла-сенсей делилась своим жизненным опытом и впечатлениями. Мы использовали разные учебные материалы, что я считаю плюсом, потому что только одного учебника, конечно, не хватает для практики языка.
+                    <br>Отдельно хочу отметить, что для меня очень важно настроение коллектива во время учёбы и я до сих пор вспоминаю тёплую атмосферу и уют занятий, которые Алла-сенсей дарила нашей группе, и какое внимание учитель оказывал к интересам каждого из нас.</p>
+                </p>				
+                <div class="cd-author">
+                        <img src="img/foto2.heic" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li>Мари Яровенко</li>
+                            <li>yamasenka12@mail.ru</li>
+                        </ul>
+                </div> <!-- cd-author -->
+                </li>
+                <li>
+                    <p>Я – лентяй. И это моя принципиальная позиция: не делать то, что не отзывается, не вызывает интереса и требует насилия над собой. С таким подходом нельзя выучить иностранный язык – говорили мне, - тем более, японский. Сейчас  я говорю и читаю на японском. Только благодаря Сенсею (Алла-сан, домо аригато годзаимас!) и её подходу к обучению, который не предполагает зубрёжки и черезнехочу. Выбор учебной программы (с интеграцией игровых моментов и авторских лайфхаков для запоминания), система мотивации (рекомендательная, а не оценивающая), объём и качество тщательно подобранного дидактического материала, терпение и такт преподавателя по отношению к ученикам, её большой культурный багаж и опыт общения с японцами – всё это превращает изучение одного из самых сложных иностранных языков в комфортную, интересную и важную часть твоей жизни. И это незабываемый момент, когда однажды тебе в руки случайно попадает бланк теста на уровень знания языка – и ты понимаешь, что способен его сдать хоть сейчас, без подготовки. Выражаю глубокую благодарность Сенсею не только за полученные знания и навыки, осуществление мечты читать на японском языке,  но и за возможность осознать: свой внутренний потенциал МОЖНО раскрыть, развить и реализовать БЕЗ НАСИЛИЯ НАД СОБОЙ.  Привет государственной системе образования!</p>
+                    </p>				
+                    <div class="cd-author">
+                            <img src="img/foto3.JPG" alt="Author image">
+                            <ul class="cd-author-info">
+                                <li>Юля Морозова</li>
+                                <li>morozzzzova@gmail.com</li>
+                            </ul>
+                    </div> <!-- cd-author -->
+                    </li>
+            
+        </ul> <!-- cd-testimonials -->
+    </div> <!-- cd-testimonials-wrapper -->
 
 
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 
-    </section>
+</div>
     <footer class="footer">
         <div class="footer__item">
             <p class="footer__item__text">Алла Котлова</p>
         </div>
         <div class="footer__item">
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  class="footer__svg" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_7_109)">
                 <path d="M42.914 40.195L35.3634 32.6444C34.4553 31.7364 32.9831 31.7364 32.0751 32.6444L28.9466 35.7729C22.8127 32.3131 17.6868 27.1873 14.227 21.0534L17.5679 17.7125C18.476 16.8045 18.476 15.3323 17.5679 14.4243L10.0172 6.87388C9.10906 5.96587 7.63689 5.96587 6.72889 6.87388L1.90721 11.6956L1.92586 11.7142C0.218828 13.1086 -0.480879 15.5213 0.349101 17.8994C5.49236 32.6379 17.3621 44.5076 32.1006 49.6508C34.372 50.4435 36.6682 49.8424 38.0874 48.3L38.0923 48.3049L42.9139 43.4832C43.8221 42.5752 43.8221 41.1031 42.914 40.195Z" fill="#BFDBF7"/>
                 <path d="M25.4832 13.2764C24.5779 13.2764 23.8439 14.0104 23.8439 14.9157C23.8439 15.8211 24.5778 16.5551 25.4832 16.5551C29.8733 16.5551 33.4449 20.1267 33.4449 24.5167C33.4449 25.4221 34.1789 26.1561 35.0843 26.1561C35.9897 26.1561 36.7237 25.4221 36.7237 24.5167C36.7237 18.3188 31.6812 13.2764 25.4832 13.2764Z" fill="#BFDBF7"/>
@@ -451,7 +448,7 @@
                 
         </div>
         <div class="footer__item">
-            <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__svg" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 24.15L40.975 10.925C40.15 7.90625 37.5375 5.75 34.375 5.75H9.62502C6.46252 5.75 3.85002 7.90625 3.02502 10.925L22 24.15Z" fill="#BFDBF7"/>
                 <path d="M22.825 27.0252C22.55 27.1689 22.275 27.3127 22 27.3127C21.725 27.3127 21.45 27.1689 21.175 27.0252L2.75 14.2314V33.0627C2.75 37.0877 5.775 40.2502 9.625 40.2502H34.375C38.225 40.2502 41.25 37.0877 41.25 33.0627V14.2314L22.825 27.0252Z" fill="#BFDBF7"/>
                 </svg>
@@ -460,5 +457,7 @@
         </div>
          
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

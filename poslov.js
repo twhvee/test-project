@@ -1,43 +1,51 @@
 function replaceContentsOfElement() {
   let proverbs = [
     {
-      proverb: "枯れ木も山の賑わい",
+      proverb: "急がば回れ<br/>[いそがばまわれ]",
       translate:
-        "Карэки мо яма но нигивай Даже увядшие деревья оживляют гору (лучше гора с деревьями, чем голая). = Лучше синица в руке, чем журавль в небе.",
+        "Если торопишься, обходи = Тише едешь- дальше будешь.",
     },
     {
-      proverb: "知らぬが仏",
+      proverb: "案ずるより産むが易<br/>[あんずるよりうむがやすし]",
       translate:
-        "[Сирану га хотокэ]\nНевежество — блаженство. = Меньше знаешь, крепче спишь.",
+        "Легче родить, чем волноваться (о том, как это будет) = Не так страшен черт, как его малюют.",
+    },
+   // {
+     // proverb: "頭隠して尻隠さず<br/>[あたまかくしてはしりかくさず]",
+     // translate: "Пряча голову, не спрячешь зада"
+    //},
+    {
+      proverb: "後は野となれ山となれ<br/>[あとはのとなれやまとなれ]",
+      translate:
+        "А после будь то поля, будь то горы. = Будь что будет",
     },
     {
-      proverb: "朱に交われば赤くなる",
+      proverb: "嘘も方便<br/>[うそもほうべん]",
       translate:
-        "[Сю ни мадзиварэба акаку нару]" +
-        "\n" +
-        "Если смешать с красными чернилами, все станет красным. — Эта фраза используется с негативным оттенком. Так говорят, например, детям, чтобы они не дружили с плохой компанией.",
+        "Ложь тоже средство (целесообразна) = Ложь во благо."
     },
     {
-      proverb: "他人の飯を食う",
+      proverb: "噂をすれば影<br/>[うわさをすればかげ]",
       translate:
-        "[Танин но мэси о куу]" +
-        "\n" +
-        "Есть пищу странника. — О ком-то, кто покинул дом и терпит лишения.",
+        "Если о ком-то говорить, то он появится = Легок на помине"
     },
     {
-      proverb: "備えあれば憂いなし",
+      proverb: "犬猿の仲<br/>[けんえんのなか]",
       translate:
-        "[Сонаэ арэба урэи наси]" +
-        "\n" +
-        "Если готов, то не о чем волноваться. = Предупрежден — значит, вооружен.",
+        "(Как) отношения кошки и обезьяны = Как кошка с собакой."
     },
+    //{
+    //  proverb: "必要は発明の母<br/>[ひつようははつめいのはは]",
+     // translate:
+    //    "Необходимость-мать изобретений                   "
+   // },
   ];
 
-  let number = Math.trunc(Math.random() * (6 - 0) + 0);
+  let number = Math.trunc(Math.random() * (8 - 0) + 0);
   // document.getElementById("top").textContent = proverbs[number].translate;
   //document.querySelector(".hover-text").textContent = proverbs[number].proverb;
-  document.getElementById("top").textContent = proverbs[number].translate;
-  let pos = (document.querySelector(".tooltip").textContent =
+  document.getElementById("top").innerHTML = proverbs[number].translate;
+  let pos = (document.querySelector(".tooltip").innerHTML =
     proverbs[number].proverb);
   pos.setAttribute("data-title", proverbs[number].translate);
 }
