@@ -2981,6 +2981,20 @@ a {
         min-width: 35%;
     
     }
+    .tooltip-text {
+        margin-top: 20px;
+        margin-left: 215px;
+        visibility: visible;
+        position: absolute;
+        z-index: 2;
+        width: 190px;
+        color: white;
+        font-size: 14px;
+        background-color: #4A4E69;
+        border-radius: 10px;
+        padding: 7px 10px 7px 10px;
+      }
+      
     .poslovicha__img{
         width: 2.2%;
         margin-left: 6%;
@@ -3159,14 +3173,14 @@ a {
  @media screen and (max-width: 450px) { 
     .poslovicha{
         margin-bottom: -44px;
-        margin-top: 50px;
-        height: 100px;
+        margin-top:-40px;
+        height: 290px;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
     .poslovicha__img{
-        width: 2.2%;
+        width: 3.2%;
         margin-left: 6%;
         margin-right: -12px;
     }
@@ -3194,7 +3208,7 @@ a {
         position: relative;
     }
     .tooltip{
-        margin-top: 130px;
+        margin-top: -150px;
         text-align: left;
         top: px;
         position: relative;
@@ -3208,22 +3222,28 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 500;
-        font-size: 2.6vw;
+        font-size: 5.1vw;
         color: #022B3A;
-        width:auto;
+        width: 1600px;
         min-width: 35%;
     
     }
+
+    .hover-text{
+        color: rgba(0, 0, 0, 0); 
+    }
     .tooltip-text {
-        visibility: hidden;
+        margin-top: 60px;
+        margin-left: 80px;
+        visibility: visible;
         position: absolute;
         z-index: 2;
-        width: 200px;
+        width: 210px;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         background-color: #4A4E69;
         border-radius: 10px;
-        padding: 10px 15px 10px 15px;
+        padding: 7px 10px 7px 10px;
       }
       
       .tooltip-text::before {
@@ -3240,13 +3260,13 @@ a {
       }
     
       #top {
-        top: -71px;
-        left: 60%;
+        top: 25px;
+        left: -50%;
       }
       
       #top::before {
-        top: 97%;
-        left: 48%;
+        top: -5%;
+        left: 45%;
       }
  }
 
