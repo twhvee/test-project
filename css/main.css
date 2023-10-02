@@ -32,8 +32,8 @@ html {
 
 
 .header {
-    height: 720px;
-    background: url(../img/back.jpg) no-repeat center center; 
+    height: 820px;
+    background: url(../img/n.jpg) no-repeat center center; 
     background-size: cover;
 }
 
@@ -80,7 +80,7 @@ color: #000000;
     left: 0px;
     top: -35.1px;
 
-    background: #1F7A8C;
+    background: #4A4E69;
     border-radius: 0px 20px 20px 0px;
 }
 
@@ -193,7 +193,7 @@ a {
     height: 72px;
 }
 .header__navbar {
-    margin-top: -35px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1569,7 +1569,7 @@ a {
       }
     .header {
         height: 320px;
-        background: url(../img/pr.png) no-repeat center center; 
+        background: url(../img/fon2.jpg) no-repeat center center; 
         background-size: cover;
     }
     .header__top-vizitka{
@@ -1623,7 +1623,7 @@ a {
         width: 300px;
         position: relative;
         left: 10%;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .header__points__item{
         margin-top: -22px;
@@ -1761,7 +1761,7 @@ a {
     }
     .header {
         height: 320px;
-        background: url(../img/pr.png) no-repeat center center; 
+        background: url(../img/fon2.jpg) no-repeat center center; 
         background-size: cover;
     }
     .header__top-vizitka{
@@ -1876,7 +1876,7 @@ a {
         width: 300px;
         position: relative;
         left: 8%;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .header__points__item{
         margin-top: -22px;
@@ -2088,12 +2088,13 @@ a {
 
 .list{
 
-    height: 650px;
+    height: 750px;
     background: #E1E5F2;
 }
 
 
 .list__item-left{
+    margin-top: -40px;
     position: relative;
     transition: 1s;
     height: 20px;
@@ -2104,6 +2105,7 @@ a {
 }
 
 .list__item-right{
+    margin-top: -40px;
     position: relative;
     transition: 1s;
     margin-right: 5%;
@@ -2137,12 +2139,16 @@ a {
 }
 
 .list__content{
-    padding-top: 80px;
+    padding-top: 95px;
 }
 
 @media screen and (max-width: 1200px) {
+
+    .list__content{
+        padding-top: 87px;
+    }
     .list{
-        height: 565px;
+        height: 655px;
         background: #E1E5F2;
     }
     .list__item__point{
@@ -2158,7 +2164,7 @@ a {
     }
     
     .list__item__title{
-        padding-top: 35px;
+        padding-top: 30px;
         margin-left: 15px;
         font-family: 'Calibri';
         font-style: normal;
@@ -2167,6 +2173,27 @@ a {
         line-height: 39px;
         color: #022B3A;
     }
+    .list__item-left{
+        margin-top: -30px;
+        position: relative;
+        transition: 1s;
+        height: 20px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .list__item-right{
+        margin-top: -30px;
+        position: relative;
+        transition: 1s;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -2174,11 +2201,22 @@ a {
     .list__content{
         padding-top: 70px;
     }
+    .list__item__title{
+        padding-top: 30px;
+        margin-left: 15px;
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 39px;
+        color: #022B3A;
+    }
 }
 
 @media screen and (max-width: 900px) {
 
     .list{
+        gap: 10px;
         height: 460px;
         background: #E1E5F2;
     }
@@ -2196,7 +2234,7 @@ a {
     }
     
     .list__item__title{
-        padding-top: 35px;
+        padding-top: 23px;
         margin-left: 15px;
         font-family: 'Calibri';
         font-style: normal;
@@ -2210,10 +2248,22 @@ a {
     }
 }
 
+@media screen and (max-width: 750px) {
+
+    .list__content{
+        padding-top: 87px;
+    }
+    .list{
+        height: 505px;
+        background: #E1E5F2;
+    }
+   
+}
+
 @media screen and (max-width: 650px) {
 
     .list{
-        height: 290px;
+        height: 325px;
         background: #E1E5F2;
     }
 
@@ -2242,7 +2292,8 @@ a {
     }
     
     .list__item-left{
-        margin-top: -30px;
+        padding-top: 0px;
+        margin-top: -45px;
         margin-bottom: 15px;
         position: relative;
         transition: 1s;
@@ -2254,7 +2305,8 @@ a {
     }
     
     .list__item-right{
-        margin-top: -30px;
+        padding-top: 0px;
+        margin-top: -45px;
         margin-bottom: 15px;
         position: relative;
         transition: 1s;
@@ -2273,7 +2325,7 @@ a {
 @media screen and (max-width: 530px) {
 
     .list{
-        height: 385px;
+        height: 495px;
         background: #E1E5F2;
     }
 
@@ -2303,7 +2355,7 @@ a {
     }
     
     .list__item-left{
-        margin-top: -20px;
+        margin-top: -30px;
         margin-bottom: 25px;
         position: relative;
         transition: 1s;
@@ -2317,7 +2369,7 @@ a {
     }
     
     .list__item-right{
-        margin-top: -20px;
+        margin-top: -30px;
         margin-bottom: 25px;
         position: relative;
         transition: 1s;
@@ -2336,7 +2388,7 @@ a {
 @media screen and (max-width: 410px) {
 
     .list{
-        height: 340px;
+        height: 450px;
         background: #E1E5F2;
     }
 
@@ -2360,13 +2412,13 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 25px;
         color: #022B3A;
     }
     
     .list__item-left{
-        margin-top: -20px;
+        margin-top: -30px;
         margin-bottom: 25px;
         position: relative;
         transition: 1s;
@@ -2380,7 +2432,7 @@ a {
     }
     
     .list__item-right{
-        margin-top: -20px;
+        margin-top: -30px;
         margin-bottom: 25px;
         position: relative;
         transition: 1s;
@@ -3861,8 +3913,8 @@ a {
     }
 
     .about__img-flowers{
-        height: 740px;
-        width: 285px;
+        height: 620px;
+        width: 375px;
     }
 
     .sec {
@@ -3959,7 +4011,7 @@ a {
         width: 265px;
     }
     .about__img-flowers{
-        height: 690px;
+        height: 610px;
         width: 265px;
     }
     .about__title {
@@ -4786,8 +4838,8 @@ a {
     
     .about__foto {
         margin-top: 50px;
-        width:  340px;
-        height: 380px;
+        width:  270px;
+        height: 370px;
         padding-right: 0px;
         transition: 1s;
     }
@@ -4899,8 +4951,8 @@ a {
     .about__foto {
         margin-top: 50px;
         margin-left: 0px;
-        width:  290px;
-        height: 300px;
+        width:  270px;
+        height: 370px;
         padding-right: 0px;
         transition: 1s;
     }
@@ -4970,7 +5022,7 @@ a {
     font-family: 'Calibri';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 29px;
 
     color: #022B3A;
@@ -4979,8 +5031,8 @@ a {
 .deserts__content{
     display: flex;
     text-align: center;
-    width: 302px;
-    height: 234px;
+    width: 522px;
+    height: 250px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -4988,7 +5040,7 @@ a {
     font-family: 'Calibri';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 24px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     color: #022B3A;   
@@ -5025,8 +5077,8 @@ a {
 @media screen and (max-width: 1600px) {  
     .deserts{
         gap: 80px;
-        margin-top: -60px;
-        margin-left: 60px;
+        margin-top: -25px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -5045,7 +5097,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 26px;
         line-height: 29px;
     
         color: #022B3A;
@@ -5054,8 +5106,8 @@ a {
     .deserts__content{
         display: flex;
         text-align: center;
-        width: 252px;
-        height: 194px;
+        width: 502px;
+        height: 220px;
     
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5063,7 +5115,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 24px;
         line-height: 24px;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         color: #022B3A;   
@@ -5078,21 +5130,37 @@ a {
 @media screen and (max-width: 1300px) {  
     .deserts{
         gap: 70px;
-        margin-top: -25px;
-        margin-left: 60px;
+        margin-top: -15px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
+    .deserts__content{
+        display: flex;
+        text-align: center;
+        width: 442px;
+        height: 134px;
     
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        color: #022B3A;   
+    }
 }
 
 @media screen and (max-width: 1100px) {  
     .deserts{
         gap: 70px;
         margin-top: -10px;
-        margin-left: 60px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -5111,8 +5179,8 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
-        line-height: 29px;
+        font-size: 17px;
+        line-height: 25px;
     
         color: #022B3A;
     }
@@ -5120,8 +5188,8 @@ a {
     .deserts__content{
         display: flex;
         text-align: center;
-        width: 222px;
-        height: 184px;
+        width: 362px;
+        height: 154px;
         margin-top: -10px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5129,7 +5197,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 24px;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         color: #022B3A;   
@@ -5144,7 +5212,7 @@ a {
     .deserts{
         gap: 50px;
         margin-top: -10px;
-        margin-left: 60px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -5161,7 +5229,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 17px;
         line-height: 29px;
     
         color: #022B3A;
@@ -5170,8 +5238,8 @@ a {
     .deserts__content{
         display: flex;
         text-align: center;
-        width: 182px;
-        height: 184px;
+        width: 322px;
+        height: 154px;
         margin-top: -10px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5179,7 +5247,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         line-height: 24px;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         color: #022B3A;   
@@ -5211,7 +5279,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 29px;
     
         color: #022B3A;
@@ -5220,8 +5288,8 @@ a {
     .deserts__content{
         display: flex;
         text-align: center;
-        width: 172px;
-        height: 174px;
+        width: 302px;
+        height: 154px;
         margin-top: -10px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -5229,7 +5297,7 @@ a {
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
-        font-size: 9px;
+        font-size: 13px;
         line-height: 24px;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         color: #022B3A;   
@@ -5334,14 +5402,14 @@ a {
         display: flex;
         text-align: center;
         width: 232px;
-        height: 174px;
+        height: 204px;
         margin-top: -10px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
         font-family: 'Calibri';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 24px;
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
