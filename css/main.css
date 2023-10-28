@@ -5423,7 +5423,7 @@ a {
 
   .cost{
 
-    background: url(../img/back12.jpg) no-repeat center center;
+    background: url(../img/back13.jpg) no-repeat center center;
     margin-top: 40px;
     height: 725px;
     display: flex;
@@ -6900,7 +6900,7 @@ figure.testimonial .btn {
 
 
 .record{
-    background: url(../img/back22.jpg) no-repeat center center;
+    background: url(../img/back24.jpg) no-repeat center center;
     margin-top: 40px;
     height: 725px;
     display: flex;
@@ -7593,7 +7593,7 @@ img[tabindex="0"] {
 
 
 .materials{
-    height: 800px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7619,8 +7619,9 @@ img[tabindex="0"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 0 100px;
+
+    
 
 }
 
@@ -7680,7 +7681,7 @@ img[tabindex="0"] {
     margin-right: 2px;
   }
   .face-button .face-primary,
-  .face-button .face-secondary {
+  .face-button .face-secondary .face-secondary1 {
     display: block;
     padding: 0 32px;
     line-height: 64px;
@@ -7696,8 +7697,9 @@ img[tabindex="0"] {
   }
 
 .materials__item__text{
+    margin-top: 30px;
     width: 409px;
-    height: 220px;
+    height: 140px;
     font-family: 'Calibri';
     font-style: normal;
     font-weight: 400;
@@ -7729,9 +7731,16 @@ img[tabindex="0"] {
 
 .materials__content{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.materials__block{
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: center;
 }
 
 .materials__pdf{
@@ -7739,9 +7748,19 @@ img[tabindex="0"] {
     height: 650px;
 }
 
+@media screen and (max-width: 1500px) {
+    .materials__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 50px;   
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .materials{
-        height: 750px;
+        height: 950px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7762,8 +7781,8 @@ img[tabindex="0"] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 0 40px;
+
     
     }
     
@@ -7777,7 +7796,7 @@ img[tabindex="0"] {
     }
     .materials__item__text{
         width: 409px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -7785,6 +7804,14 @@ img[tabindex="0"] {
         line-height: 29px;
         color: #022B3A;
     }
+
+    .materials__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     
     .materials__img{
         position: relative;
@@ -7798,9 +7825,9 @@ img[tabindex="0"] {
     
     .materials__content{
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -7814,7 +7841,7 @@ img[tabindex="0"] {
 
 @media screen and (max-width: 1150px) {
     .materials{
-        height: 650px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -7850,7 +7877,7 @@ img[tabindex="0"] {
     }
     .materials__item__text{
         width: 409px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -7861,19 +7888,19 @@ img[tabindex="0"] {
     
     .materials__img{
         position: relative;
-        width: 126px;
-        height: 136px;
+        width: 120px;
+        height: 130px;
         justify-self: flex-end;
-        top: -140px;
+        top: -110px;
         transform: rotate(0.39deg);
         
         }
     
     .materials__content{
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -7904,7 +7931,7 @@ img[tabindex="0"] {
         margin-right: 2px;
     }
     .face-button .face-primary,
-    .face-button .face-secondary {
+    .face-button .face-secondary .face-secondary1 {
         display: block;
         padding: 0 32px;
         line-height: 54px;
@@ -7922,11 +7949,16 @@ img[tabindex="0"] {
 
 @media screen and (max-width: 1050px) {
     .materials{
-        height: 1070px;
+        height: 1920px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .materials__block{
+        display: flex;
+        flex-direction: column;
     }
     
     .materials__title{
@@ -7943,10 +7975,18 @@ img[tabindex="0"] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 10%;
         margin-left: 0px;
         margin-right: 0px;
     
+    }
+
+    .materials__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+        margin-bottom: 10%;
     }
     
     .materials__img{
@@ -7954,16 +7994,17 @@ img[tabindex="0"] {
         width: 126px;
         height: 136px;
         justify-self: flex-end;
-        top: -940px;
+        top: -1840px;
         transform: rotate(0.39deg);
         
         }
     
     .materials__content{
+        margin-top: 60px;
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -7985,6 +8026,7 @@ img[tabindex="0"] {
     
 
     .face-button {
+        margin-top: 10px;
         margin-right: 0px;
         height: 64px;
         width: 250px;
@@ -8005,7 +8047,7 @@ img[tabindex="0"] {
         margin-right: 2px;
       }
       .face-button .face-primary,
-      .face-button .face-secondary {
+      .face-button .face-secondary .face-secondary1 {
         display: block;
         padding: 0 32px;
         line-height: 64px;
@@ -8023,7 +8065,7 @@ img[tabindex="0"] {
         margin-top: -50px;
         margin-left: 70px;
         width: 409px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -8035,7 +8077,7 @@ img[tabindex="0"] {
 
 @media screen and (max-width: 800px) {
     .materials{
-        height: 900px;
+        height: 1700px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8068,7 +8110,7 @@ img[tabindex="0"] {
         width: 116px;
         height: 126px;
          justify-self: flex-end;
-        top: -900px;
+        top: -1800px;
         transform: rotate(0.39deg);
         
         }
@@ -8076,8 +8118,8 @@ img[tabindex="0"] {
     .materials__content{
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -8099,7 +8141,7 @@ img[tabindex="0"] {
     
 
     .face-button {
-        margin-top: -50px;
+        margin-top: -10px;
         margin-right: -10px;
         height: 54px;
         width: 220px;
@@ -8138,7 +8180,7 @@ img[tabindex="0"] {
         margin-top: -50px;
         margin-left: 70px;
         width: 309px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -8152,7 +8194,7 @@ img[tabindex="0"] {
 
 @media screen and (max-width: 600px) {
     .materials{
-        height: 800px;
+        height: 1430px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8185,7 +8227,7 @@ img[tabindex="0"] {
         width: 91px;
         height: 101px;
         justify-self: flex-end;
-        top: -800px;
+        top: -1535px;
         transform: rotate(0.39deg);
         
         }
@@ -8193,8 +8235,8 @@ img[tabindex="0"] {
     .materials__content{
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -8216,7 +8258,7 @@ img[tabindex="0"] {
     
 
     .face-button {
-        margin-top: -50px;
+        margin-top: -25px;
         margin-right: 30px;
         height: 44px;
         width: 210px;
@@ -8255,7 +8297,7 @@ img[tabindex="0"] {
         margin-top: -50px;
         margin-left: 40px;
         width: 309px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -8268,7 +8310,7 @@ img[tabindex="0"] {
 
 @media screen and (max-width: 500px) {
     .materials{
-        height: 620px;
+        height: 1200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8298,10 +8340,10 @@ img[tabindex="0"] {
     
     .materials__img{
         position: relative;
-        width: 71px;
-        height: 81px;
+        width: 76px;
+        height: 86px;
          justify-self: flex-end;
-        top: -692px;
+        top: -1312px;
         transform: rotate(0.39deg);
         
         }
@@ -8309,8 +8351,8 @@ img[tabindex="0"] {
     .materials__content{
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
     }
 
     
@@ -8332,10 +8374,10 @@ img[tabindex="0"] {
     
 
     .face-button {
-        margin-top: -70px;
+        margin-top: -30px;
         margin-right: 30px;
-        height: 34px;
-        width: 170px;
+        height: 40.px;
+        width: 150px;
         display: inline-block;
         border: 3px solid #4A4E69;
         border-radius: 20px;
@@ -8371,7 +8413,7 @@ img[tabindex="0"] {
         margin-top: -50px;
         margin-left: 40px;
         width: 259px;
-        height: 220px;
+        height: 140px;
         font-family: 'Calibri';
         font-style: normal;
         font-weight: 400;
@@ -8383,6 +8425,17 @@ img[tabindex="0"] {
 }
 
 
+@media screen and (max-width: 380px) {
+    .materials__img{
+        position: relative;
+        width: 70px;
+        height: 80px;
+         justify-self: flex-end;
+        top: -1307px;
+        transform: rotate(0.39deg);
+        
+        }
+}
 
 
 
