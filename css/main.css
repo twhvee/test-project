@@ -2139,7 +2139,7 @@ a {
 }
 
 .list__content{
-    padding-top: 95px;
+    padding-top: 105px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -5424,6 +5424,7 @@ a {
   .cost{
 
     background: url(../img/back13.jpg) no-repeat center center;
+    background-size: cover;
     margin-top: 40px;
     height: 725px;
     display: flex;
@@ -6901,6 +6902,7 @@ figure.testimonial .btn {
 
 .record{
     background: url(../img/back24.jpg) no-repeat center center;
+    background-size: cover;
     margin-top: 40px;
     height: 725px;
     display: flex;
@@ -7722,7 +7724,7 @@ img[tabindex="0"] {
     width: 146px;
     height: 156px;
     justify-self: flex-end;
-    top: -140px;
+    top: -155px;
     transform: rotate(0.39deg);
 
 }
